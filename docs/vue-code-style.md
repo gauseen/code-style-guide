@@ -1,7 +1,13 @@
 
 ### Vue 编码风格探讨
 
-#### JavaScript standard  [代码规范][4]
+#### 推荐细读
+* [Vue 官方文档][9]
+* JavaScript Standard  [代码规范][4]
+* [Clean Code JavaScript][7]
+* [精选 JavaScript 片段][8]
+
+---------------------------------------------------
 
 #### 什么是组件？
 * 组件是可复用的 Vue 实例，且带有一个名字。
@@ -14,8 +20,8 @@
 * 有意义的：见名知意
 * 简短: 1 到 3 个单词（不包含组件前缀命名空间）
 * 具有可读性: 组件名应该倾向于完整单词而不是缩写，以便于沟通交流
-* 多个单词必须符合[自定义元素规范][1] [vue code style][3]: 使用连字符（`-`）分隔单词，切勿使用保留字
-* `sh-` 前缀作为命名空间：这样可以防止命名冲突，方便其它项目复用
+* `SH` 前缀作为命名空间（前缀可自定义）：这样可以防止命名冲突，方便其它项目复用
+* 多个单词必须符合[自定义元素规范][1] [vue code style][3]: 对于绝大多数项目来说，在单文件组件文件名应该总是 `PascalCase` 的 —— 但是在模板中引用应该是 `kebab-case` 的
 
 #### 为什么？
 * 组件是 Vue 主要功能之一，用的地方多，所以命名需要简短、见名知意（具有可读性）
@@ -37,7 +43,7 @@
 * 二次封装组件
   * 基于第三方 UI 组件库再次封装的组件
 
-* [紧密耦合的组件命名规则][5]：如：`sideBar、sideBarItem`
+* [紧密耦合的组件命名规则][5]：如：`SideBar、SideBarItem`
   * 和父组件紧密耦合的子组件应该以父组件名作为前缀命名
 
 
@@ -396,6 +402,9 @@ if (status === 1) {
 [4]: https://github.com/gauseen/standard/blob/master/README.md
 [5]: https://cn.vuejs.org/v2/style-guide/#%E7%B4%A7%E5%AF%86%E8%80%A6%E5%90%88%E7%9A%84%E7%BB%84%E4%BB%B6%E5%90%8D-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90
 [6]: https://youzan.github.io/vant/#/zh-CN/address-list
+[7]: https://github.com/ryanmcdermott/clean-code-javascript
+[8]: https://github.com/30-seconds/30-seconds-of-code
+[9]: https://cn.vuejs.org/v2/guide/
 
 <!-- 参考文献 -->
 [20]: https://cn.vuejs.org/v2/style-guide/
