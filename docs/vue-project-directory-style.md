@@ -21,6 +21,8 @@
 |      |
 |      |———— icons          # svg icons
 |      |
+|      |———— layout         # 应用骨架级页面(SideBar、Header、AppMain)
+|      |
 |      |———— locales        # 国际化
 |      |
 |      |———— pages/views    # 页面(与路由对应)
